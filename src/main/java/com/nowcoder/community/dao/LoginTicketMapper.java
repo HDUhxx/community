@@ -2,8 +2,10 @@ package com.nowcoder.community.dao;
 
 import com.nowcoder.community.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 @Mapper
+@Repository
 public interface LoginTicketMapper {
 
     @Insert({
