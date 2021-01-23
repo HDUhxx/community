@@ -20,4 +20,6 @@ public interface DiscussPostMapper {
     //插入
     int insertDiscussPost(DiscussPost discussPost);
 
+    DiscussPost selectDiscussPostById(int id);
+
 }
