@@ -128,6 +128,7 @@ public class MessageController {
     @RequestMapping(path = "/letter/send",method = RequestMethod.POST)
     @ResponseBody
     public String sendLetter(String toName,String content){
+//        Integer.valueOf("ac");//
         User target = userService.findUserByName(toName);
         if (target == null){
             return CommunityUtil.getJsonString(1,"目标用户不存在");
